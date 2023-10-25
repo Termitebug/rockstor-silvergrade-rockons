@@ -4,7 +4,7 @@
             "wyoming-piper": {
                 "image": "rhasspy/wyoming-piper",
                 "launch_order": 1,
-                "cmd_arguments": [ ["--voice=fi_FI-medium"] ],
+                "cmd_arguments": [ ["--voice=fi_FI-harri-medium"] ],
                 "ports": {
                     "10200": {
                         "description": "Port for voice broadcasts. Suggested default: 10200.",
