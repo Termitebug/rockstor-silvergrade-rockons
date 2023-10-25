@@ -1,0 +1,41 @@
+{
+    "Piper": {
+        "containers": {
+            "wyoming-piper": {
+                "image": "rhasspy/wyoming-piper",
+                "launch_order": 1,
+                "cmd_arguments": [ ["--voice=fi_FI-medium"] ],
+                "ports": {
+                    "10200": {
+                        "description": "Port for voice broadcasts. Suggested default: 10200.",
+                        "host_default": 10200,
+                        "label": "Default port",
+                        "protocol": "tcp"
+                    }
+                },
+                "volumes": {
+                    "/data": {
+                        "description": "Choose a Share for data. Eg: create a Share called piper-data for this purpose alone.",
+                        "label": "Data Storage"
+                    }
+                },
+		"environment": {
+		    "PUID": {
+			"description": "Enter a valid UID to run Piper with. It must have full permissions to all Shares mapped in the previous step.",
+			"label": "UID",
+			"index": 1	
+		    },
+		    "PGID": {
+			"description": "Enter a valid GID to use along with the same UID. It(or the above UID) must have full permissions to all Shares mapped in the previous step.",
+			"label": "GID",
+			"index": 2
+		    }
+		}
+            }
+        },
+        "description": "Home Assistant Wyoming protocol server for piper text to speech system. <p>Based on a custom docker image: <a href='https://hub.docker.com/r/rhasspy/wyoming-piper' target='_blank'>https://hub.docker.com/r/rhasspy/wyoming-piper</a>, available for amd64 architecture.</p>",
+        "volume_add_support": true,
+        "website": "https://github.com/home-assistant/addons/blob/master/piper/DOCS.md",
+	"version": "1.0"
+    }
+}
