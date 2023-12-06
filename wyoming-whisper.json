@@ -4,7 +4,7 @@
             "wyoming-whisper": {
                 "image": "rhasspy/wyoming-whisper",
                 "launch_order": 1,
-                "cmd_arguments": [ ["--model=tiny-int8", "--language=fi"] ],
+                "cmd_arguments": [ ["--model", "tiny-int8", "--language", "fi"] ],
                 "ports": {
                     "10300": {
                         "description": "Port for voice broadcasts. Suggested default: 10300.",
