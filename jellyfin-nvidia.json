@@ -18,10 +18,10 @@
                     "--net",
                     "host"
                 ],
-				[
-					"--gpus",
-					"all"
-				],
+		[
+		    "--gpus",
+		    "all"
+		],
                 [
                     "--runtime",
                     "nvidia"
