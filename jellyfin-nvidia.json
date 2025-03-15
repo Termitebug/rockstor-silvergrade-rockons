@@ -70,7 +70,8 @@
                         "description": "Enter a valid GID of an existing user with permission to media shares to run Jellyfin as.",
                         "label": "GID",
                         "index": 2,
-                        "default":
+                        "default":100
+		    },
 		    "NVIDIA_DRIVER_CAPABILITIES": {
 			"description": "Enter which NVIDIA driver capabilities should be enabled (default: all)",
 			"label": "NVIDIA Driver Capabilities",
