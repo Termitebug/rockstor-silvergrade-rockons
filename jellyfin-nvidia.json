@@ -71,7 +71,7 @@
                         "label": "GID",
                         "index": 2,
                         "default":
-					          "NVIDIA_DRIVER_CAPABILITIES": {
+		    "NVIDIA_DRIVER_CAPABILITIES": {
 					              "description": "Enter which NVIDIA driver capabilities should be enabled (default: all)",
 					              "label": "NVIDIA Driver Capabilities",
 					              "index": 3,
