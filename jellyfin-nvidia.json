@@ -21,11 +21,7 @@
 		[
 		    "--gpus",
 		    "all"
-		],
-                [
-                    "--runtime",
-                    "nvidia"
-                ]
+		]
             ],
                 "devices": {
                     "VAAPI": {
